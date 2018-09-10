@@ -22,7 +22,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Wrap your schema:
+
+```ruby
+wrapper = PersistedQueries::Wrapper.new(
+  schema:  MySchema,
+  params:  params,
+  context: context
+)
+render json: wrapper.call
+```
 
 ## Development
 
